@@ -2,6 +2,7 @@
 
 # written on 9 Apr 2026 by Charitra Jain
 # updated on 10 Sep 2026
+# added legends on 26 Nov 2026
 # to plot rms surface velocities, mobility and inferred tectonic regimes
 # for models presented in the manuscript
 # Jain & Sobolev (2026): Controls on the tectonic evolution of the early Earth: 1. Composite rheology
@@ -264,6 +265,8 @@ for path in model_list:
       ax[0][0].axvline(670., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1250., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].set_xlim(0., evolved_time)
+      loc1='upper right'
+      loc2='lower right'
    elif current_model == '10_QCf01r3':
       ax[0][0].fill_betweenx(time_Myr_run[run],0.,290.,     linewidth=0,color = ML,alpha=0.8,edgecolor='none')
       ax[0][0].fill_betweenx(time_Myr_run[run],290.,465.,   linewidth=0,color = RO,alpha=1,edgecolor='none')
@@ -279,6 +282,8 @@ for path in model_list:
       ax[0][0].axvline(480., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(705., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1250., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
+      loc1='upper center'
+      loc2='lower center'
    elif current_model == '15_QPf01r1':
       ax[0][0].fill_betweenx(time_Myr_run[run],0.,310.,     linewidth=0,color = ML,alpha=0.8,edgecolor='none')
       ax[0][0].fill_betweenx(time_Myr_run[run],310.,530.,  linewidth=0,color = RO,alpha=1,edgecolor='none')
@@ -291,6 +296,8 @@ for path in model_list:
       ax[0][0].axvline(526., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(556., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1244., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
+      loc1='upper center'
+      loc2='lower center'
    elif current_model == '01_NoMeltQDf005r1':
       ax[0][0].fill_betweenx(time_Myr_run[run],0.,90.,  linewidth=0,color = ML,alpha=0.8,edgecolor='none')
       ax[0][0].fill_betweenx(time_Myr_run[run],90.,500.,  linewidth=0,color = RO,alpha=1,edgecolor='none')
@@ -303,6 +310,8 @@ for path in model_list:
       ax[0][0].axvline(300., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1296., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1299., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
+      loc1='upper center'
+      loc2='lower center'
    elif current_model == '08_NoMeltQCf005r2':
       ax[0][0].fill_betweenx(time_Myr_run[run],0.,140.,  linewidth=0,color = ML,alpha=0.8,edgecolor='none')
       ax[0][0].fill_betweenx(time_Myr_run[run],140.,480.,  linewidth=0,color = SL,alpha=1,edgecolor='none')
@@ -311,6 +320,8 @@ for path in model_list:
       ax[0][0].axvline(1171., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1172., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1173., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
+      loc1='center'
+      loc2='center right'
    elif current_model == '13_NoMeltQPf005r1':
       ax[0][0].fill_betweenx(time_Myr_run[run],0.,200.,  linewidth=0,color = ML,alpha=0.8,edgecolor='none')
       ax[0][0].fill_betweenx(time_Myr_run[run],200.,380.,  linewidth=0,color = SL,alpha=1,edgecolor='none')
@@ -321,11 +332,15 @@ for path in model_list:
       ax[0][0].axvline(302., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(808., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(809., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
+      loc1='lower center'
+      loc2='lower right'
    elif current_model == '11_QPf005r2':
       ax[0][0].fill_betweenx(time_Myr_run[run],0.,4500.,  linewidth=0,color = ML,alpha=0.8,edgecolor='none')
       ax[0][0].axvline(218., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1405., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(3044., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
+      loc1='upper center'
+      loc2='upper right'
    elif current_model == '14_QPf01r5':
       ax[0][0].fill_betweenx(time_Myr_run[run],0.,275.,   linewidth=0,color = ML,alpha=0.8,edgecolor='none')
       ax[0][0].fill_betweenx(time_Myr_run[run],275.,400.,  linewidth=0,color = RO,alpha=1,edgecolor='none')
@@ -343,6 +358,8 @@ for path in model_list:
       ax[0][0].axvline(235., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1335., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(2454., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
+      loc1='upper center'
+      loc2='upper right'
    elif current_model == '17_QPf02r2':
       ax[0][0].fill_betweenx(time_Myr_run[run],0.,350.,  linewidth=0,color = RO,alpha=1,edgecolor='none')
       ax[0][0].fill_betweenx(time_Myr_run[run],350.,480.,   linewidth=0,color = ML,alpha=0.8,edgecolor='none')
@@ -364,6 +381,8 @@ for path in model_list:
       ax[0][0].axvline(210., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(1481., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
       ax[0][0].axvline(2111., color='#000000', linestyle='--',linewidth=1, alpha=0.5)
+      loc1='upper right'
+      loc2='lower right'
 
    ax[0][0].set_xlim(0., evolved_time)
    ax[0][0].set_xscale('linear')
@@ -374,6 +393,8 @@ for path in model_list:
    ax[0][0].set_ylabel('$v_{rms}$ (cm/yr)',labelpad=4)
    ax[0][0].set_xlabel('Time (Myr)')
    ax[0][0].set_box_aspect(1/box_ratio)
+   ax[0][0].legend(ncol = 1, labels=['v$_{rms}$'], loc=loc1, \
+   labelspacing = 0.5, edgecolor = 'none', facecolor = 'none', fancybox = False)
 
    ax2 = ax[0][0].twinx()
    ax2.plot(time_Myr_run[run],moving_average_mobility_run[run], linestyle='-', linewidth=1, alpha=0.7, color = '#ffffff')
@@ -385,6 +406,8 @@ for path in model_list:
    ax2.set_yticks(mobility_ticks)
    ax2.set_ylabel('Mobility',labelpad=4)
    ax2.set_box_aspect(1/box_ratio)    
+   ax2.legend(ncol = 1, labels=['mobility'], loc=loc2, \
+   labelspacing = 0.5, labelcolor = '#ffffff', edgecolor = 'none', facecolor = 'none', fancybox = False)  
 
    fig.tight_layout()
 
