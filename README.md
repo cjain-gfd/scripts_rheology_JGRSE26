@@ -12,7 +12,7 @@ Plotting scripts and animations for Jain &amp; Sobolev (2026), Controls on the t
 
 # Simulation data
 
-In order to execute the plotting scripts, please download *data_and_scripts.zip* from [https://doi.org/10.17605/OSF.IO/M4JH7](https://doi.org/10.5281/zenodo.22734764) and unzip it in */data/*. Plotting scripts only work when this simulation data set is present in the data folder.
+In order to execute the plotting scripts, please download *data_and_scripts.zip* from [[https://doi.org/10.17605/OSF.IO/M4JH7](https://doi.org/10.5281/zenodo.22734764)](https://doi.org/10.5281/zenodo.22734764) and unzip it in */data/*. Plotting scripts only work when this simulation data set is present in the data folder.
 
 # Software requirements
 
