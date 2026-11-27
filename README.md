@@ -1,5 +1,5 @@
 # Plotting scripts and animations for Jain & Sobolev (2026a, JGR: Solid Earth)
-Plotting scripts and animations for Jain &amp; Sobolev (2026), Controls on the tectonic evolution of the early Earth: 1. Composite rheology. Journal of Geophysical Research: Solid Earth
+Plotting scripts and animations for Jain, C., &amp; Sobolev, S. V. (2026), Controls on the tectonic evolution of the early Earth: 1. Composite rheology. *Journal of Geophysical Research: Solid Earth*, 131, e2026JB034559. [https://doi.org/10.1029/2026JB034559](https://doi.org/10.1029/2026JB034559)
 
 # Repository structure
     .
